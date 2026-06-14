@@ -1,0 +1,47 @@
+.sidebar {
+  width: 250px;
+  background: #111;
+  border-right: 1px solid #1f5e44;
+  padding: 25px;
+}
+
+
+.logo {
+  color: #2ecc71;
+  margin-bottom: 40px;
+}
+
+.profile {
+  text-align: center;
+  margin-bottom: 40px;
+  
+}
+
+.avatar {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  background: #1f5e44;
+  margin: auto;
+  margin-bottom: 10px;
+  background-image: url(avatar.png);
+  background-position: center;
+  background-size: cover;
+}
+
+.sidebar ul {
+  list-style: none;
+}
+
+.sidebar li {
+  padding: 14px;
+  margin-bottom: 8px;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.sidebar li:hover,
+.active {
+  background: #1f5e44;
+}

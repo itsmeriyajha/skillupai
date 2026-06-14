@@ -1,0 +1,214 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+   
+}
+html,
+body {
+  width: 100%;
+  height: 100vh;
+  font-family: Arial, Helvetica, sans-serif;
+ 
+  overflow: hidden;
+  
+}
+
+.Parent{
+    height: 100vh;
+    
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+     background-image: url(https://images.unsplash.com/photo-1707430393809-784967fe6fee?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D);
+      background-position: center;
+      background-size: cover;
+}
+.logo{
+    height: 600px;
+    width: 700px;
+    border-radius: 500px;
+}
+ 
+.left {
+display: flex;
+padding: 10px 0;
+flex-direction: column;
+width: 50%;
+
+}
+.highlightText {
+  
+  color:  rgb(1, 31, 1);
+  padding: 4px 12px;
+  border-radius: 8px;
+  font-size: 50px;
+  font-family: 'Times New Roman', Times, serif;
+}
+
+
+.left p{
+    color:#d1d5db;
+    max-width:500px;
+    line-height:1.7;
+    font-size:1rem;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    margin-left: 150px ;
+}
+
+.right{
+    
+     height: 110vh;
+     width: 800px;
+     display: flex;
+     align-items: center;
+     
+     flex-direction: column;
+     justify-content: center;
+     background-color: rgba(0, 0, 0, 0.589);
+   
+
+}
+
+.right h2{
+    color: beige;
+    font-weight: 400;
+    font-family: cursive;
+    padding: 20px 20px 0px 30px;
+    font-size: 50px;
+
+}
+.right h3{
+    color: #ffba00;
+    font-weight: 400;
+    font-family: cursive;
+    padding: 20px 20px 0px 30px;
+
+}
+.right input{
+     padding: 12px;
+  border: none;
+  border-radius: 10px;
+  outline: none;
+}
+.right button{
+    color: white;
+    font-weight: 400;
+    font-family: cursive;
+   padding: 10px;
+   background-color: transparent;
+   border-radius: 0%;
+   
+}
+.right button:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 8px 20px rgba(0, 200, 83, 0.5);
+}
+.forgetbtn{
+    margin-top: 20px;
+    margin-left: 170px;
+}
+.homebtn{
+     color: white;
+    font-weight: 400;
+    font-family: cursive;
+   padding: 10px;
+   background-color: transparent;
+   border-radius: 0%;
+    margin-top: 20px;
+    margin-left: 50px;
+    
+}
+.homebtn:hover{
+    transform: translateY(-2px);
+    box-shadow: 0 8px 20px rgba(0, 200, 83, 0.5);
+}
+.right h4{
+    color: #ffba00;
+    font-weight: 400;
+    font-family: cursive;
+   margin-top: 150px;
+
+
+}
+.main{
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+   
+    background-image: url(https://images.unsplash.com/photo-1707430393809-784967fe6fee?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D);
+  background-size: cover;
+  background-position: center;
+}
+.card{
+     width: 400px;
+  padding: 40px;
+
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+
+ background: rgba(5, 156, 40, 0.2);
+  backdrop-filter: blur(15px);
+
+  border-radius: 20px;
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.2);
+
+    
+}
+.card h1{
+    color: black;
+     text-align: center;
+   font-weight: 400px ;
+   font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+.card input{
+    padding: 12px;
+  border: none;
+  border-radius: 10px;
+  outline: none;
+}
+
+.card button{
+    padding: 12px;
+    color: white;
+    border-radius: 10px;
+    border: none;
+    font-family: cursive;
+    font-size: 17px;
+    background-color:rgba(5, 156, 40, 0.2); 
+
+    
+}
+
+.card p{
+    text-align: center;
+    color: #BB8a52;
+
+}
+
+.loginBtn {
+    width: 10%;
+    padding: 12px 16px;
+    margin-top: 25px;
+     color: white;
+    font-weight: 400;
+    font-family: cursive;
+   padding: 10px;
+   background-color: transparent;
+   border-radius: 0%;
+   
+    
+}
+
+.loginBtn:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 8px 20px rgba(0, 200, 83, 0.5);
+}
+
+.signupBtn {
+    display: block;
+    margin: 12px auto 0;
+}

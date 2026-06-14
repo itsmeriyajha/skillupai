@@ -1,0 +1,223 @@
+*{
+  margin:0;
+  padding:0;
+  box-sizing:border-box;
+}
+
+.dashboard{
+  min-height:100vh;
+  display:flex;
+  background:#0D1117;
+  color:white;
+  font-family:Arial, sans-serif;
+}
+
+/* Sidebar */
+
+.sidebar{
+  width:250px;
+  background:#161B22;
+  padding:25px;
+  border-right:1px solid #30363D;
+}
+
+.logo{
+  color:#22C55E;
+  margin-bottom:40px;
+}
+
+.sidebar ul{
+  list-style:none;
+}
+
+.sidebar li{
+  padding:15px;
+  margin-bottom:10px;
+  background:#1C2128;
+  border-radius:10px;
+  cursor:pointer;
+}
+
+/* Main */
+
+.main{
+  flex:1;
+  padding:30px;
+  overflow:auto;
+}
+
+.stats{
+  display:grid;
+  grid-template-columns:repeat(3,1fr);
+  gap:20px;
+}
+
+.statCard{
+  background:#1C2128;
+  padding:25px;
+  border-radius:15px;
+}
+
+.statCard p{
+  color:#22C55E;
+  font-size:1.5rem;
+  margin-top:10px;
+}
+
+.startProject{
+  margin-top:30px;
+  background:#1C2128;
+  padding:25px;
+  border-radius:15px;
+}
+
+.modeBtns{
+  display:flex;
+  gap:15px;
+  margin-top:20px;
+}
+
+.modeBtns button{
+  padding:12px 20px;
+  border:none;
+  border-radius:10px;
+  background:#22C55E;
+  color:black;
+  font-weight:bold;
+}
+
+.heading{
+  margin-top:40px;
+  margin-bottom:20px;
+}
+
+.projectGrid{
+  display:grid;
+  grid-template-columns:repeat(auto-fill,minmax(250px,1fr));
+  gap:20px;
+}
+
+.projectCard{
+  background:#1C2128;
+  padding:20px;
+  border-radius:15px;
+  border:1px solid #30363D;
+}
+
+.projectCard span{
+  color:#22C55E;
+  display:block;
+  margin:10px 0;
+}
+
+.projectCard p{
+  color:#aaa;
+  margin-bottom:15px;
+}
+
+.projectCard button{
+  width:100%;
+  padding:10px;
+  border:none;
+  border-radius:10px;
+  background:#22C55E;
+  color:black;
+  font-weight:bold;
+}
+
+.currentProject{
+  margin-top:40px;
+  background:#1C2128;
+  padding:25px;
+  border-radius:15px;
+}
+
+.progressBar{
+  height:12px;
+  background:#30363D;
+  border-radius:10px;
+  margin:20px 0;
+}
+
+.progress{
+  width:80%;
+  height:100%;
+  background:#22C55E;
+  border-radius:10px;
+}
+
+.currentProject button{
+  margin-top:15px;
+  padding:10px 20px;
+  border:none;
+  border-radius:10px;
+  background:#22C55E;
+}
+
+.deploy{
+  margin-top:40px;
+  background:#1C2128;
+  padding:25px;
+  border-radius:15px;
+}
+
+.deployCards{
+  display:flex;
+  gap:20px;
+  margin-top:20px;
+}
+
+.deployCards div{
+  flex:1;
+  background:#161B22;
+  padding:20px;
+  border-radius:15px;
+}
+
+.deployCards button{
+  margin-top:10px;
+  padding:10px 20px;
+  border:none;
+  border-radius:10px;
+  background:#22C55E;
+}
+
+/* AI Panel */
+
+.aiPanel{
+  width:320px;
+  background:#161B22;
+  border-left:1px solid #30363D;
+  padding:25px;
+}
+
+.chat{
+  margin:25px 0;
+}
+
+.bot{
+  background:#1C2128;
+  padding:15px;
+  border-radius:10px;
+  margin-bottom:10px;
+}
+
+.aiPanel button{
+  width:100%;
+  margin-bottom:10px;
+  padding:12px;
+  border:none;
+  border-radius:10px;
+  background:#22C55E;
+  color:black;
+  font-weight:bold;
+}
+
+.aiPanel input{
+  width:100%;
+  padding:12px;
+  border:none;
+  border-radius:10px;
+  background:#1C2128;
+  color:white;
+}

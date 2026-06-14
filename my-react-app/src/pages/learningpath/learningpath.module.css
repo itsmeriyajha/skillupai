@@ -1,0 +1,163 @@
+
+.roadmapContainer {
+  min-height: 100vh;
+   height: 100vh;
+   background: linear-gradient( To bottom left,
+   rgba(4, 148, 4, 0.81),
+   rgba(0, 11, 14, 0.644)
+   );
+  padding: 60px 20px;
+  color: white;
+  overflow-x: scroll;
+
+}
+
+.roadmapTitle {
+  text-align: center;
+  font-size: 3rem;
+  margin-bottom: 40px;
+}
+
+.progressCard {
+  max-width: 700px;
+  margin: 0 auto 60px;
+  padding: 20px;
+  border-radius: 20px;
+  backdrop-filter: blur(10px);
+  background: rgba(255, 255, 255, 0.15);
+  text-align: center;
+}
+
+.progressBar {
+  width: 100%;
+  height: 12px;
+  background: rgba(255, 255, 255, 0.2);
+  border-radius: 20px;
+  margin: 15px 0;
+}
+
+.progressFill {
+  width: 35%;
+  height: 100%;
+  border-radius: 20px;
+  background: white;
+}
+
+.roadmap {
+  position: relative;
+  max-width: 1000px;
+  margin: auto;
+}
+
+.roadmap::before {
+  content: "";
+  position: absolute;
+  width: 6px;
+  background: rgba(255, 255, 255, 0.4);
+  top: 0;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.roadmapItem {
+  position: relative;
+  width: 50%;
+  padding: 30px;
+}
+
+.left {
+  left: 0;
+}
+
+.right {
+  left: 50%;
+}
+
+.dayBubble {
+  position: absolute;
+  top: 40px;
+  width: 70px;
+  height: 70px;
+  border-radius: 50%;
+  background: white;
+  color: green;
+  font-size: 1.5rem;
+  font-weight: bold;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.left .dayBubble {
+  right: -35px;
+}
+
+.right .dayBubble {
+  left: -35px;
+}
+
+.dayCard {
+  padding: 25px;
+  border-radius: 20px;
+  background: rgba(255, 255, 255, 0.15);
+  backdrop-filter: blur(12px);
+}
+
+.dayLabel {
+  font-size: 0.9rem;
+  opacity: 0.8;
+}
+
+.dayCard h3 {
+  margin: 10px 0;
+}
+
+.dayCard p {
+  line-height: 1.5;
+  margin-bottom: 15px;
+}
+
+.startBtn {
+  border: none;
+  padding: 12px 18px;
+  border-radius: 12px;
+  background: white;
+  color: green;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.aiCard {
+  max-width: 700px;
+  margin: 60px auto 0;
+  padding: 25px;
+  border-radius: 20px;
+  text-align: center;
+  background: rgba(255, 255, 255, 0.15);
+  backdrop-filter: blur(12px);
+}
+
+@media (max-width: 768px) {
+  .roadmap::before {
+    left: 30px;
+  }
+
+  .roadmapItem {
+    width: 100%;
+    padding-left: 80px;
+  }
+
+  .left,
+  .right {
+    left: 0;
+  }
+
+  .dayBubble {
+    left: -5px !important;
+  }
+
+  .roadmapTitle {
+    font-size: 2rem;
+  }
+}

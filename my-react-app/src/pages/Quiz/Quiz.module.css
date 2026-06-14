@@ -1,0 +1,144 @@
+*{
+  margin:0;
+  padding:0;
+  box-sizing:border-box;
+}
+
+.quizPage{
+  min-height:100vh;
+  background:#0a0f0d;
+  display:flex;
+  justify-content:center;
+  align-items:center;
+  padding:40px;
+  font-family:Arial, sans-serif;
+}
+
+.quizContainer{
+  width:100%;
+  max-width:900px;
+  background:#111;
+  border:1px solid #1f5e44;
+  border-radius:20px;
+  padding:30px;
+}
+
+.header{
+  margin-bottom:20px;
+}
+
+.header h1{
+  color:#2ecc71;
+  margin-bottom:5px;
+}
+
+.header p{
+  color:#aaa;
+}
+
+.progress{
+  height:12px;
+  background:#222;
+  border-radius:20px;
+  overflow:hidden;
+  margin-bottom:30px;
+}
+
+.progressFill{
+  width:25%;
+  height:100%;
+  background:#2ecc71;
+}
+
+.questionCard{
+  background:#161616;
+  border:1px solid #1f5e44;
+  border-radius:20px;
+  padding:30px;
+}
+
+.badge{
+  display:inline-block;
+  background:#1f5e44;
+  color:white;
+  padding:8px 16px;
+  border-radius:20px;
+  margin-bottom:20px;
+}
+
+.questionCard h2{
+  margin-bottom:25px;
+  color:white;
+  line-height:1.5;
+}
+
+.options{
+  display:flex;
+  flex-direction:column;
+  gap:15px;
+}
+
+.option{
+  display:flex;
+  align-items:center;
+  gap:15px;
+  background:#222;
+  padding:18px;
+  border-radius:12px;
+  color:white;
+  cursor:pointer;
+  transition:0.3s;
+}
+
+.option:hover{
+  background:#1f5e44;
+}
+
+.option input{
+  width:18px;
+  height:18px;
+}
+
+.navigation{
+  display:flex;
+  justify-content:space-between;
+  margin-top:30px;
+}
+
+.navigation button{
+  padding:12px 25px;
+  border:none;
+  border-radius:10px;
+  cursor:pointer;
+  font-weight:bold;
+}
+
+.nextBtn{
+  background:#2ecc71;
+  color:black;
+}
+
+.questionNumbers{
+  margin-top:30px;
+  display:grid;
+  grid-template-columns:repeat(10,1fr);
+  gap:10px;
+}
+
+.number{
+  height:45px;
+  width:45px;
+  border-radius:10px;
+  background:#222;
+  color:white;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  cursor:pointer;
+  transition:0.3s;
+}
+
+.number:hover{
+  background:#2ecc71;
+  color:black;
+}

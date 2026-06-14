@@ -1,0 +1,227 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+   
+}
+html,
+body {
+  width: 100%;
+  height: 100vh;
+  font-family: Arial, Helvetica, sans-serif;
+  
+  overflow: hidden;
+  
+}
+
+.parent{ 
+    
+    height: 100vh;
+   background: linear-gradient( To bottom left,
+   rgba(144,238,144,0.25),
+   rgba(173,216,230,0.25)
+   );
+   gap: 10px;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   
+}
+
+.card{
+   margin-left: 10vh;
+   padding: 10px;
+   height: 600px;
+   background-color:white;
+   backdrop-filter: blur(4px);
+   text-align: start;
+   width: 1000px;
+   display: flex;
+   flex-direction: column;
+   
+   gap: 10px;
+    
+}
+
+.card h1{
+    color: rgb(5, 8, 0);
+     margin-left: 10px ;
+    font-size: 60px;
+
+}
+.card h2{
+    color: #00c853;
+    font-size: 50px;
+   margin-left: 10px ;
+
+}
+
+.card h5{
+    color: grey; 
+    margin: 10px 15px;
+  
+}
+.card h3{
+    color: black;
+    font-size: 20px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    margin: 0 10;
+}  
+.card input{
+    
+    background: linear-gradient(135deg, #7cff6b, #00c853);
+  color: white;
+  border: none;
+  padding: 14px 32px;
+  border-radius: 50px;
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 15px rgba(0, 200, 83, 0.3);
+}
+.btn{
+      margin-right:  10vh;
+   padding: 10px;
+   height: 500px;
+   background-color: white;
+   text-align: start;
+   width: 1000px;
+   display: flex;
+   flex-direction: column;
+   gap:10px; 
+}
+
+.button{
+    display: flex;
+ gap: 40px;
+ flex-direction: column;
+
+}
+.btn h3{
+        color: black;
+    font-size: 60px;
+    
+}
+.btn h2{
+    color: #00c853;
+    font-size: 50px;
+   margin-left: 10px ;
+
+}
+.btn button{
+    background: linear-gradient(135deg, #7cff6b, #00c853);
+  color: white;
+  border: none;
+  padding: 14px 32px;
+  border-radius: 50px;
+  font-size: 1rem;
+  
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 15px rgba(0, 200, 83, 0.3);
+}
+
+.container{
+    display: flex;
+   margin: 15px ;
+    height: 80vh;
+    width:50%;
+    flex-direction: column;
+    background-color: white;
+    gap: 10px;
+}
+.container h1{
+    color: rgb(5, 8, 0);
+     margin-left: 10px ;
+    font-size: 60px;
+
+}
+.container h2{
+    color: #00c853;
+    font-size: 50px;
+   margin-left: 10px ;
+
+}
+.container p{
+    color: grey; 
+    margin: 10px 15px;
+    text-align: center;
+}
+.container input{
+    margin: 20px;
+    background: white;
+  color: white;
+  border: none;
+  padding: 14px 32px;
+  border-radius: 50px;
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 15px rgba(0, 200, 83, 0.3);
+
+}
+
+.skills{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 30px;
+    margin: 10px;
+
+}
+.skills button{
+      
+    background: linear-gradient(135deg, #7cff6b, #00c853);
+  color: white;
+  border: none;
+  padding: 14px 32px;
+  border-radius: 50px;
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 15px rgba(0, 200, 83, 0.3);
+}
+.footer{
+  margin: 10px;
+    display: flex;
+    align-items: end;
+    justify-content: space-between;
+    margin-top: 30px;
+    
+}
+.footer button{
+    background: linear-gradient(135deg, #7cff6b, #00c853);
+  color: white;
+  border: none;
+  padding: 14px 32px;
+  border-radius: 50px;
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 15px rgba(0, 200, 83, 0.3);
+  
+}
+.days{
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+}
+.days button{
+     background: linear-gradient(135deg, #7cff6b, #00c853);
+  color: white;
+  border: none;
+  padding: 14px 32px;
+  border-radius: 50px;
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 15px rgba(0, 200, 83, 0.3);
+  margin: 0 50px;
+}
+

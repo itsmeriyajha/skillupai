@@ -1,0 +1,159 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.dashboard {
+  min-height: 100vh;
+  display: flex;
+  background: #0a0f0d;
+  color: white;
+  font-family: Arial, sans-serif;
+}
+
+/* Sidebar */
+
+
+
+/* Main */
+
+.main {
+  flex: 1;
+  padding: 30px;
+}
+
+.topbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.topbar input {
+  width: 320px;
+  padding: 12px;
+  border: none;
+  border-radius: 12px;
+  background: #161616;
+  color: white;
+}
+
+/* Stats */
+
+.stats {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+  margin-top: 30px;
+}
+
+.statCard {
+  background: #121212;
+  padding: 25px;
+  border-radius: 18px;
+  border: 1px solid #1f5e44;
+}
+
+.statCard span {
+  color: #2ecc71;
+  font-size: 2rem;
+  font-weight: bold;
+}
+
+/* Cards */
+
+.cards {
+  margin-top: 30px;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
+}
+
+.card {
+  background: #121212;
+  padding: 25px;
+  border-radius: 18px;
+  border: 1px solid #1f5e44;
+}
+
+.card h3 {
+  margin-bottom: 10px;
+}
+
+.card p {
+  color: #aaa;
+  margin-bottom: 20px;
+}
+
+.card button {
+  padding: 10px 18px;
+  border: none;
+  border-radius: 10px;
+  background: #2ecc71;
+  color: black;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+/* Chat */
+
+.chatbox {
+  margin-top: 30px;
+  background: #121212;
+  border: 1px solid #1f5e44;
+  border-radius: 20px;
+  overflow: hidden;
+}
+
+.chatHeader {
+  padding: 18px;
+  border-bottom: 1px solid #1f5e44;
+}
+
+.chatMessages {
+  height: 250px;
+  padding: 20px;
+}
+
+.bot,
+.user {
+  max-width: 60%;
+  padding: 12px;
+  margin-bottom: 12px;
+  border-radius: 12px;
+}
+
+.bot {
+  background: #1f5e44;
+}
+
+.user {
+  background: #2ecc71;
+  color: black;
+  margin-left: auto;
+}
+
+.chatInput {
+  display: flex;
+  padding: 15px;
+  gap: 10px;
+  border-top: 1px solid #1f5e44;
+}
+
+.chatInput input {
+  flex: 1;
+  padding: 12px;
+  background: #1a1a1a;
+  border: none;
+  border-radius: 10px;
+  color: white;
+}
+
+.chatInput button {
+  padding: 12px 20px;
+  background: #2ecc71;
+  color: black;
+  border: none;
+  border-radius: 10px;
+  font-weight: bold;
+}
