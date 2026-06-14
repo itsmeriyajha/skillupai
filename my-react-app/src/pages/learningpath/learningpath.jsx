@@ -23,67 +23,68 @@ const roadmap = [
 
 const LearningPath = () => {
   return (
-    
-    <section className={styles.roadmapContainer}>
-        <Sidebar/>
-      <h1 className={styles.roadmapTitle}>
-        🚀 HTML Mastery Roadmap
-      </h1>
+    <div className={styles.pageContainer}>
+      <Sidebar />
+      <section className={styles.roadmapContainer}>
+        <h1 className={styles.roadmapTitle}>
+          🚀 HTML Mastery Roadmap
+        </h1>
 
-      <div className={styles.progressCard}>
-        <h3>Your Progress</h3>
+        <div className={styles.progressCard}>
+          <h3>Your Progress</h3>
 
-        <div className={styles.progressBar}>
-          <div className={styles.progressFill}></div>
+          <div className={styles.progressBar}>
+            <div className={styles.progressFill}></div>
+          </div>
+
+          <p>0 / 15 Days Completed</p>
         </div>
 
-        <p>0 / 15 Days Completed</p>
-      </div>
+        <div className={styles.roadmap}>
+          {roadmap.map((item, index) => (
+            <div
+              key={item.day}
+              className={`${styles.roadmapItem} ${
+                index % 2 === 0
+                  ? styles.left
+                  : styles.right
+              }`}
+            >
+              <div className={styles.dayBubble}>
+                {item.day}
+              </div>
 
-      <div className={styles.roadmap}>
-        {roadmap.map((item, index) => (
-          <div
-            key={item.day}
-            className={`${styles.roadmapItem} ${
-              index % 2 === 0
-                ? styles.left
-                : styles.right
-            }`}
-          >
-            <div className={styles.dayBubble}>
-              {item.day}
+              <div className={styles.dayCard}>
+                <span className={styles.dayLabel}>
+                  Day {item.day}
+                </span>
+
+                <h3>{item.title}</h3>
+
+                <p>
+                  Complete today's lesson and move
+                  one step closer to becoming an
+                  HTML expert.
+                </p>
+
+                <button className={styles.startBtn}>
+                  Start Learning
+                </button>
+              </div>
             </div>
+          ))}
+        </div>
 
-            <div className={styles.dayCard}>
-              <span className={styles.dayLabel}>
-                Day {item.day}
-              </span>
+        <div className={styles.aiCard}>
+          <h3>🤖 SkillUp AI Coach</h3>
 
-              <h3>{item.title}</h3>
-
-              <p>
-                Complete today's lesson and move
-                one step closer to becoming an
-                HTML expert.
-              </p>
-
-              <button className={styles.startBtn}>
-                Start Learning
-              </button>
-            </div>
-          </div>
-        ))}
-      </div>
-
-      <div className={styles.aiCard}>
-        <h3>🤖 SkillUp AI Coach</h3>
-
-        <p>
-          Based on your learning speed, today's
-          lesson should take around 40 minutes.
-        </p>
-      </div>
-    </section>
+          <p>
+            Based on your learning speed, today's
+            lesson should take around 40 minutes.
+          </p>
+        </div>
+      </section>
+    </div>
   );
 };
 

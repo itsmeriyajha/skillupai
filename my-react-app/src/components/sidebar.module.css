@@ -3,6 +3,9 @@
   background: #111;
   border-right: 1px solid #1f5e44;
   padding: 25px;
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
 }
 
 
@@ -39,9 +42,42 @@
   border-radius: 10px;
   cursor: pointer;
   transition: 0.3s;
+  color: #ccc;
 }
 
 .sidebar li:hover,
 .active {
   background: #1f5e44;
+  color: white;
+}
+
+/* Glassmorphic theme styling for Learning Path */
+.glassSidebar {
+  background: rgba(10, 15, 13, 0.5) !important;
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
+  border-right: 1px solid rgba(255, 255, 255, 0.1) !important;
+  box-shadow: 4px 0 24px 0 rgba(0, 0, 0, 0.2);
+}
+
+.glassSidebar .logo {
+  color: #2ecc71 !important;
+  text-shadow: 0 0 10px rgba(46, 204, 113, 0.4);
+}
+
+.glassSidebar li {
+  color: rgba(255, 255, 255, 0.75) !important;
+}
+
+.glassSidebar li:hover {
+  background: rgba(255, 255, 255, 0.1) !important;
+  color: #ffffff !important;
+}
+
+.glassSidebar li.active,
+.glassSidebar .active {
+  background: rgba(46, 204, 113, 0.25) !important;
+  border: 1px solid rgba(46, 204, 113, 0.4) !important;
+  color: #ffffff !important;
+  font-weight: bold;
 }
