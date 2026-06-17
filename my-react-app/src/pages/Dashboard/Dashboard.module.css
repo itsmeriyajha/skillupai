@@ -5,11 +5,12 @@
 }
 
 .dashboard {
-  min-height: 100vh;
+  height: 100vh;
   display: flex;
   background: #0a0f0d;
   color: white;
   font-family: Arial, sans-serif;
+  overflow: hidden;
 }
 
 /* Sidebar */
@@ -20,7 +21,9 @@
 
 .main {
   flex: 1;
-  padding: 30px;
+  height: 100%;
+  overflow-y: auto;
+  padding: 30px 30px 60px 30px;
 }
 
 .topbar {

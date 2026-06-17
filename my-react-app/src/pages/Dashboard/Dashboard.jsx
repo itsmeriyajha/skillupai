@@ -12,12 +12,7 @@ const Dashboard =()=> {
   return (
     <div className={styles.dashboard}>
       {/* Sidebar */}
-      <aside className={styles.sidebar}>
-        <h2 className={styles.logo}>SkillUp AI</h2>
-
-        
-       <Sidebar/>
-      </aside>
+      <Sidebar />
 
       {/* Main Content */}
       <main className={styles.main}>
